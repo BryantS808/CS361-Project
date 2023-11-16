@@ -15,4 +15,5 @@ An example program call would be:
         phrase = phrase_file.read()
 
 3. UML
-    
+    ![CS361 HW8](https://github.com/BryantS808/CS361-Project/assets/109177265/3a9faf07-770b-40f7-be66-4d3a1c77c1bb)
+
