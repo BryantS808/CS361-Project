@@ -6,7 +6,7 @@ def common_proteins():
         print("Here is a list of common protein meats used.")
         print("1. Beef\n2. Pork\n3. Chicken\n4. Fish\n5. Turkey\n6. Lamb\n7. Shrimp\n8. Veal\n9. Duck\n10. Bison")
         print("Enter Q to return to the main menu.")
-        print("FYI: A new feature is to instead enter the number of the protein to learn more.\nThis will show you a paragraph about some information about the protein.")
+        print("FYI: A new feature is to instead enter the number of the protein to learn more.\nThis will show you a paragraph about some information about the protein to read.")
         user_input = get_input()
         if(user_input == 'Q'):
             os.system('clear')  

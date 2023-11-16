@@ -1,4 +1,4 @@
-1: Meat, 230 cals
+1: Thing, 200 cals
 2: Lamb, 300 cals
 3: other, 260 cals
 4: fish, 231 cals

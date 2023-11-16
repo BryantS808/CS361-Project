@@ -34,10 +34,11 @@ def get_first_unit():
         if(user_input.isdigit()):
             int_version = int(user_input)
 
-            #if one input
+            #if one digit aka checking if the actual munerical value is 1-3
             if(int_version >=1 and int_version<= 3):
                 valid = True
                 return int_version
+            #if the len is 3 or more its a possible attempt at one line input
             elif(len(user_input) >=3):
                 #check that index 0 is 1-3, check if index 1 is 1-3, but not the same as index 0, and that the amount is greater than 0.
                 if(int(user_input[0]) >= 1 and int(user_input[0]) <= 3):
