@@ -21,13 +21,15 @@ phrases = [
 ]
 
 while(True):
-    with open("phrase.txt", 'r') as file:
+    with open("inputService.txt", 'r') as file:
         command = file.read()
     print("Read ", command)
     if(command == "run"):
+        with open("inputService.txt", 'w') as file:
+            file.write('')
         random_number = random.randint(1, 15)
         print(random_number)
-        with open("phrase.txt", 'w') as file:
+        with open("outputService.txt", 'w') as file:
             file.write(phrases[random_number])
     else:
         print("Sleeping.")

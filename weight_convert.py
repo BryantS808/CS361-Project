@@ -1,5 +1,5 @@
 import os
-
+import time
 
 def converter():
     print("Welcome to the weight converter, this will convert 3 common units of weight to each other.Grams, ounces and pounds. Please use whole numbers.")
@@ -14,14 +14,27 @@ def converter():
     elif(starting > 3):
         print("One line input")
         print("call microservice with one line")
+        call_microservice(str(starting))
         return
     final = get_second_unit(starting)
     amount = get_amount()
     final_string = str(starting) + str(final) + str(amount)
     print("Call micro service with final string: ", final_string)
+    call_microservice(final_string)
+    return
+   
 
-                                                    
-
+def call_microservice(input_string):
+    with open("inputService.txt", 'w') as file:
+        file.write(input_string)
+    output = ''
+    while(output == ''):
+        with open("outputService.txt", 'r') as file:
+            output = file.read()
+    print("Conversion = ", output, "\n")
+    with open("inputService.txt", 'w') as file:
+        file.write('')
+    return
 
 def get_first_unit(): 
     valid = False
